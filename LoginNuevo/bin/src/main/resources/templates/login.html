@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	
+	<div style="text-align:center;">
+	<h1>Inicio sesion</h1>
+    <form action="#" th:action="@{/login}" th:object="${usuario}" method="post">
+        <p>Usuario: <input type="text" th:field="*{user}" /></p>
+        <p>Contraseña: <input type="text" th:field="*{pass}" /></p>
+        <p><input type="submit" value="Enviar" /> <input type="reset" value="Resetear" /></p>
+    </form>
+    </div>
+	
+</body>
+</html>
